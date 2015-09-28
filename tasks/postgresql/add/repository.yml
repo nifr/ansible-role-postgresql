@@ -1,0 +1,5 @@
+---
+
+- include: "apt/repository.yml"
+  when:    'postgresql_package_manager === "apt"'
+

@@ -1,0 +1,10 @@
+---
+
+- include: postgresql/service/start.yml
+
+- include: postgresql/service/stop.yml
+
+- include: postgresql/service/reload.yml
+
+- include: postgresql/service/restart.yml
+

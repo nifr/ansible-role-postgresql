@@ -1,0 +1,8 @@
+---
+
+- include: 'add/repository.yml'
+  tags:    [postgresql, add, repository]
+
+- include: 'install/package.yml'
+  tags:    [postgresql, install, package]
+

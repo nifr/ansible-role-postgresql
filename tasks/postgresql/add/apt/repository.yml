@@ -1,0 +1,10 @@
+---
+
+- name: "postgresql:add:apt:repository | Adding the apt repository."
+  apt_repository:
+    repo:         '{{ item.repo }}'
+    state:        'present'
+    update_cache: '{{ item.cache_update }}'
+  with_items:
+    - '{"repo": "{{ postgresql_apt_repository }}", "cache_update": "{{ postgresql_apt_cache_update }}"}'
+
