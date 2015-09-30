@@ -7,5 +7,5 @@
     update_cache:     '{{ item.cache_update }}'
     cache_valid_time: '{{ item.cache_ttl }}'
   with_items:
-    - '{"package": "{{ postgresql_apt_package }}", "cache_update": "{{ postgresql_apt-cache_update }}", "cache_ttl": "{{ postgresql_apt_cache_timeout }}"}'
+    - '{"package": "{{ postgresql_apt_package }}", "cache_update": "{{ postgresql_apt_cache_update }}", "cache_ttl": "{{ postgresql_apt_cache_timeout }}"}'
 

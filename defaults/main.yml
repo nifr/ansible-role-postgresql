@@ -16,7 +16,7 @@ postgresql_package_manager: '{{ "yum" if (ansible_distribution in ["CentOS", "Re
 
 postgresql_version:       "9.4"
 
-postgresql_apt_package:  '{{ "postgresql-" + postgresql_version }}'
+postgresql_apt_package:  'postgresql-{{ postgresql_version }}'
 
 postgresql_apt_repository: "deb http://apt.postgresql.org/pub/repos/apt/ {{ansible_distribution_release}}-pgdg main"
 
