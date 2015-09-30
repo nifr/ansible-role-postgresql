@@ -1,0 +1,7 @@
+---
+
+- name: "postgresql:add:apt:key"
+  apt_key:
+    url:   http://www.postgresql.org/media/keys/ACCC4CF8.asc
+    state: present
+
