@@ -12,7 +12,7 @@ postgresql_apt_cache_update:  '{{ postgresql_cache_update }}'
 ## @ var int
 postgresql_apt_cache_timeout: '{{ postgresql_cache_timeout }}'
 
-postgresql_package_manager: '{{ "yum" if (ansible_distribution in ['CentOS', 'Red Hat Enterprise Linux']) }} else "apt"'
+postgresql_package_manager: '{{ "yum" if (ansible_distribution in ['CentOS', 'Red Hat Enterprise Linux']) else "apt"}}'
 
 postgresql_version:       "9.4"
 
